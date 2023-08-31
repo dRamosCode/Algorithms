@@ -35,5 +35,13 @@ class BubbleSortTest extends PHPUnit\Framework\TestCase {
         bubbleSort($testArray);
         $this->assertEquals($testArray, $expectedOutput);
     }
+    public function test_it_orders_numbers_in_string_format()
+    {
+        $testArray = ["96.43",-74.18,71,54.85,"53",41.9,"-24.67",38,-1.32,-20];
+        $expectedOutput = [-74.18, -24.67, -20, "-1.32", 38, 41.9, 53, 54.85, 71, 96.43];
+
+        bubbleSort($testArray);
+        $this->assertEquals($testArray, $expectedOutput);
+    }
 }
 ?>
