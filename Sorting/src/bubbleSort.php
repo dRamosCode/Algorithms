@@ -18,10 +18,6 @@ function bubbleSort(&$array){
             }
         }
     }
-
-    // Print result
-    for ($i=0; $i<$length; $i++){
-        echo $array[$i]," ";
-    }
 }
+
 ?>
