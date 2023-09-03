@@ -2,7 +2,7 @@
 
 function selectionSort(&$array){
     // Get array length
-    $length = count($array);
+    $length = sizeof($array);
 
     for ($i=0; $i < $length; $i++) { 
         // Find minimum value from starting index
@@ -16,8 +16,6 @@ function selectionSort(&$array){
         $temp = $array[$i];
         $array[$i] = $array[$indexMin];
         $array[$indexMin] = $temp;
-
-        echo $array[$i]," ";
     }
 }
 

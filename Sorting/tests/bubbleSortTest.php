@@ -44,4 +44,5 @@ class BubbleSortTest extends PHPUnit\Framework\TestCase {
         $this->assertEquals($testArray, $expectedOutput);
     }
 }
+
 ?>
